@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:layout_marginRight="4dp"
+        android:id="@+id/movieList_iv_img"
+        android:layout_alignParentLeft="true"
+        android:layout_width="70dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/movieList_tv_title"
+        android:layout_toRightOf="@id/movieList_iv_img"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="엑스맨"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RatingBar
+
+        android:id="@+id/movieList_ratingBar"
+        android:layout_toRightOf="@id/movieList_iv_img"
+        android:layout_below="@id/movieList_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"/>
+    <TextView
+        android:id="@+id/movieList_tv_pubDate"
+        android:layout_toRightOf="@id/movieList_iv_img"
+        android:layout_below="@id/movieList_ratingBar"
+        android:text="2019"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/movieList_tv_director"
+        android:layout_below="@+id/movieList_tv_pubDate"
+        android:layout_toRightOf="@id/movieList_iv_img"
+        android:text="감독"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/movieList_tv_actor"
+        android:layout_toRightOf="@id/movieList_iv_img"
+        android:layout_below="@+id/movieList_tv_director"
+        android:text="배우"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:background="#dcdedf"
+        android:layout_below="@+id/movieList_tv_actor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</RelativeLayout>

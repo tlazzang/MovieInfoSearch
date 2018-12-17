@@ -19,9 +19,6 @@ import com.example.shim.movieinfosearch.Adapter.MovieAdapter;
 import com.example.shim.movieinfosearch.Model.Movie;
 import com.example.shim.movieinfosearch.R;
 
-import java.net.URLEncoder;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements MainContract.MainView{
@@ -52,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.Main
             @Override
             public void onClick(View v) {
                 start = 1;
-                presenter.requestDataFromServer(URLEncoder.encode(et_movieName.getText().toString()), start);
+                presenter.requestDataFromServer(et_movieName.getText().toString(), start);
             }
         });
 
